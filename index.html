@@ -1,23 +1,819 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "2026년 1월 이사 손없는날 완벽 가이드",
+            "description": "2026년 1월 이사 손없는날 정확한 날짜 정보와 함께 이사 비용 절약 팁, 성공적인 이사 준비를 위한 상세 체크리스트, 그리고 믿을 수 있는 포장이사 견적 비교 서비스를 제공합니다.",
+            "mainContentOfPage": {
+                "@type": "WebPageElement",
+                "description": "2026년 1월 손 없는 날 달력, 이사 체크리스트, 이사 비용 분석, 신뢰성 있는 정보 출처"
+            },
+            "lastReviewed": "2025-12-02",
+            "url": "https://yourdomain.com/2026-january-move"
+        }
+    </script>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "2026년 1월 이사 손없는날은 언제인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2026년 1월의 손없는날은 음력 9일, 10일, 19일, 20일, 29일, 30일로, 양력 날짜는 달력 정보를 통해 확인하실 수 있습니다. 이 날짜들은 이사 수요가 많아 미리 예약하는 것이 중요합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "손없는날 이사가 일반 이사보다 비싼가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "네, 손없는날은 전통적으로 이사하기 좋은 길일로 여겨져 이사 업체들의 예약이 집중됩니다. 따라서 일반적인 평일이나 주말보다 이사 비용이 10%~30% 가량 높게 책정될 수 있습니다. 합리적인 가격을 위해 최소 2~3개월 전에 여러 업체에 견적을 문의하고 비교하는 것이 좋습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "손없는날이 아닌 날에 이사해도 괜찮은가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "손없는날은 미신적인 의미가 강하며, 현대에는 과학적으로 입증된 바가 없습니다. 이사 비용 절감이나 원하는 날짜 확보 등 현실적인 이점을 고려하여 손없는날이 아닌 평일에 이사를 진행하는 가정도 많습니다. 개인의 선택과 가치관에 따라 결정하시면 됩니다."
+              }
+            }
+          ]
+        }
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap">
+
+    <style>
+        :root {
+            --primary-color: #3b5998; /* 신뢰감을 주는 푸른 계열 */
+            --secondary-color: #ff9933; /* 활력을 주는 주황 계열 */
+            --background-light: #f4f7f6; /* 부드러운 배경색 */
+            --text-dark: #2c3e50;
+            --text-light: #ecf0f1;
+            --accent-green: #2ecc71; /* 강조색 */
+            --border-color: #dfe6e9;
+        }
+
+        body {
+            font-family: "Noto Sans KR", sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 2.5rem 1rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 0.75rem 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            margin: 0;
+        }
+
+        nav a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+        }
+
+        h3 {
+            color: var(--text-dark);
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            border-left: 5px solid var(--accent-green);
+            padding-left: 10px;
+        }
+
+        /* 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            text-align: center;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 700;
+        }
+
+        td {
+            background-color: var(--background-light);
+        }
+
+        tr:nth-child(even) td {
+            background-color: #eef1f3;
+        }
+
+        /* 강조 박스 */
+        .highlight-box {
+            background-color: #e0f7fa; /* 밝은 아쿠아 계열 */
+            border-left: 5px solid #00bcd4;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        .highlight-box strong {
+            color: #00bcd4;
+        }
+
+        /* CTA 버튼 */
+        .cta-button {
+            display: block;
+            width: fit-content;
+            margin: 2rem auto;
+            background-color: var(--secondary-color);
+            color: white;
+            font-weight: 700;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e68a2e;
+        }
+
+        /* 키워드 태그 */
+        .keyword-tags {
+            margin: 1.5rem 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .keyword-tags a {
+            background-color: #e8f0fe;
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 0.9rem;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .keyword-tags a:hover {
+            background-color: #c9d7f0;
+        }
+
+        /* 폼 요소 */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group input[type="date"],
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            border-color: var(--secondary-color);
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 153, 51, 0.5);
+        }
+
+        .submit-button {
+            background-color: var(--accent-green);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+
+        .submit-button:hover {
+            background-color: #27ae60;
+        }
+
+        /* 참고문헌 스타일 */
+        .references {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 0.9rem;
+        }
+
+        .references li {
+            margin-bottom: 0.5rem;
+            border-left: 3px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .references a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .references a:hover {
+            text-decoration: underline;
+        }
+
+        /* 기타 문단 스타일 */
+        p, ul {
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            background-color: #eef1f3;
+            margin-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>2026년 1월 이사 손없는날 완벽 가이드 및 포장이사 견적 비교</h1>
+        <p>성공적인 **1월 이사 손없는날** 계획을 위한 모든 정보와 합리적인 이사 비용 분석, 지금 바로 시작하세요.</p>
+    </header>
+
+    <nav aria-label="주요 목차">
+        <ul>
+            <li><a href="#jan2026">2026년 1월 손없는날</a></li>
+            <li><a href="#cost_analysis">이사 비용 및 견적 팁</a></li>
+            <li><a href="#checklist">이사 준비 체크리스트</a></li>
+            <li><a href="#faq">자주 묻는 질문</a></li>
+            <li><a href="#quotation">견적 요청</a></li>
+        </ul>
     </nav>
+
     <main>
-      <h1>Home page</h1>
+        <section id="introduction">
+            <h2>✨ 1월이사 손없는날, 왜 중요한가요?</h2>
+            <p><strong>'손없는날'</strong>은 예로부터 악귀나 귀신이 활동하지 않아 인간에게 해를 끼치지 않는 길일(吉日)로 여겨져 이사나 개업 등 중요한 행사를 치르는 날로 선호되었습니다. 특히 추운 **1월이사**의 경우, 안전하고 순조로운 출발을 기원하는 마음으로 **손없는날**을 택하려는 수요가 매우 높습니다.</p>
+            <p>2026년 1월은 새해의 시작과 함께 새로운 보금자리로 옮기는 분들이 많아 이사 시장의 관심이 집중되는 시기입니다. 손없는날은 정해져 있지만, 실제 이사를 할 수 있는 날짜는 한정적이므로 미리 계획을 세우는 것이 가장 중요합니다. 이 페이지에서는 **2026년 1월의 손없는날** 정보를 정확하게 제공하고, 이와 관련된 이사 준비 과정 및 비용 절약 노하우를 상세하게 안내해 드립니다.</p>
+
+            <div class="keyword-tags" aria-label="연관 키워드 태그">
+                <a href="#jan2026">2026년 1월 손없는날</a>
+                <a href="#cost_analysis">이사 비용 절약</a>
+                <a href="#checklist">이사 준비</a>
+                <a href="#quotation">포장이사 견적</a>
+                <a href="#">이사 날짜 계산</a>
+                <a href="#">손없는 날 유래</a>
+            </div>
+
+            <hr>
+
+            <h3>'손'의 의미와 손없는날의 원리</h3>
+            <p><strong>'손'</strong>은 우리나라 민속신앙에서 인간의 활동을 방해하는 악귀나 귀신을 뜻합니다. 이 '손'은 음력으로 날짜를 따져 동서남북 4방위로 돌아다니며 사람에게 해를 끼친다고 전해집니다.</p>
+            <ul>
+                <li>음력으로 끝자리가 **1일, 2일**인 날: **동쪽**에 '손'이 머물러 동쪽으로 이사하는 것을 피했습니다.</li>
+                <li>음력으로 끝자리가 **3일, 4일**인 날: **남쪽**에 '손'이 머물러 남쪽으로 이사하는 것을 피했습니다.</li>
+                <li>음력으로 끝자리가 **5일, 6일**인 날: **서쪽**에 '손'이 머물러 서쪽으로 이사하는 것을 피했습니다.</li>
+                <li>음력으로 끝자리가 **7일, 8일**인 날: **북쪽**에 '손'이 머물러 북쪽으로 이사하는 것을 피했습니다.</li>
+            </ul>
+            <p>반면, 음력 날짜의 끝자리가 **9일과 0일(10일)**인 날은 하늘로 올라가거나 멀리 떠나서 '손'이 없는 날, 즉 **손없는날**로 여겨져 방향에 관계없이 이사하기 가장 좋은 길일로 통용됩니다. 따라서 **1월이사 손없는날**을 찾는 것은 곧 음력 날짜의 끝자리가 9일과 10일인 날을 양력 달력에서 찾는 과정입니다.</p>
+        </section>
+
+        <section id="jan2026">
+            <h2>📅 2026년 1월 손없는날 정확한 날짜 정보</h2>
+            <p>성공적인 **1월이사** 계획을 위해 **2026년 1월의 손없는날**을 미리 확인하고 예약하는 것이 필수적입니다. 손없는날은 이사 수요가 폭증하므로, 최소 2~3개월 전부터 이사 업체 견적을 받아보는 것을 권장합니다.</p>
+
+            <table>
+                <caption>2026년 1월 손없는날 달력</caption>
+                <thead>
+                    <tr>
+                        <th>양력 날짜</th>
+                        <th>음력 날짜</th>
+                        <th>요일</th>
+                        <th>비고 (D-Day)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1월 7일</td>
+                        <td>음력 11월 19일</td>
+                        <td>수요일</td>
+                        <td>**손없는날** (수요일)</td>
+                    </tr>
+                    <tr>
+                        <td>1월 8일</td>
+                        <td>음력 11월 20일</td>
+                        <td>목요일</td>
+                        <td>**손없는날** (목요일)</td>
+                    </tr>
+                    <tr>
+                        <td>1월 17일</td>
+                        <td>음력 11월 29일</td>
+                        <td>토요일</td>
+                        <td>**손없는날** (주말, 수요 최고)</td>
+                    </tr>
+                    <tr>
+                        <td>1월 18일</td>
+                        <td>음력 11월 30일</td>
+                        <td>일요일</td>
+                        <td>**손없는날** (주말, 수요 최고)</td>
+                    </tr>
+                    <tr>
+                        <td>1월 27일</td>
+                        <td>음력 12월 9일</td>
+                        <td>화요일</td>
+                        <td>**손없는날** (화요일)</td>
+                    </tr>
+                    <tr>
+                        <td>1월 28일</td>
+                        <td>음력 12월 10일</td>
+                        <td>수요일</td>
+                        <td>**손없는날** (수요일)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <p>💡 **주목!** **1월 17일(토)**과 **1월 18일(일)**은 2026년 1월 중에서도 이사 수요가 가장 폭발적으로 증가할 것으로 예상되는 **주말 손없는날**입니다. 이 날짜에 이사를 희망하시는 분들은 **최소 3~4개월 전**에 서둘러 포장이사 업체 예약을 확정하는 것이 **이사 비용 절약**과 원하는 시간대 확보의 핵심입니다.</p>
+            </div>
+
+            <h3>손없는날 이사의 장단점 분석</h3>
+            <h4>장점</h4>
+            <ul>
+                <li><strong>심리적 안정감:</strong> 전통적인 길일에 이사함으로써 심리적인 편안함과 새로운 시작에 대한 기대감을 높일 수 있습니다.</li>
+                <li><strong>주변의 권유:</strong> 어르신들이나 미신을 중시하는 분들의 권유로 인해 발생할 수 있는 가족 간의 의견 충돌을 줄일 수 있습니다.</li>
+            </ul>
+            <h4>단점</h4>
+            <ul>
+                <li><strong>높은 이사 비용:</strong> 수요 집중으로 인해 이사 비용이 평일 대비 10% ~ 30% 이상 상승할 수 있습니다.</li>
+                <li><strong>경쟁적인 예약:</strong> 원하는 이사 업체를 선정하기 어렵고, 이사 시간대가 업체 사정에 의해 조정될 가능성이 높습니다.</li>
+                <li><strong>혼잡함:</strong> 동시에 많은 가구가 이사를 진행하여 엘리베이터 사용, 주차 등에서 혼잡이 발생할 수 있습니다.</li>
+            </ul>
+
+            <form id="date-calculator">
+                <h3>📌 손없는날 이사 날짜 선택 계산기</h3>
+                <p>본 계산기는 이사 희망 날짜와 손없는날을 비교하여 견적 문의에 도움을 드립니다.</p>
+                <div class="form-group">
+                    <label for="move-date">이사 희망 날짜 선택:</label>
+                    <input type="date" id="move-date" name="move-date" required min="2026-01-01" max="2026-01-31">
+                </div>
+                <div class="form-group">
+                    <label for="move-direction">이사 방향 (선택 사항):</label>
+                    <select id="move-direction" name="move-direction">
+                        <option value="">이사 방향을 선택해 주세요</option>
+                        <option value="동쪽">현 거주지 기준 동쪽</option>
+                        <option value="남쪽">현 거주지 기준 남쪽</option>
+                        <option value="서쪽">현 거주지 기준 서쪽</option>
+                        <option value="북쪽">현 거주지 기준 북쪽</option>
+                        <option value="무관">방향 무관</option>
+                    </select>
+                </div>
+                <button type="button" class="submit-button" onclick="checkMoveDate()">날짜 적합성 확인</button>
+                <p id="result-message" style="margin-top: 1rem; font-weight: 600; color: #d35400;"></p>
+                <script>
+                    function checkMoveDate() {
+                        const dateInput = document.getElementById('move-date').value;
+                        const direction = document.getElementById('move-direction').value;
+                        const resultElement = document.getElementById('result-message');
+                        
+                        if (!dateInput) {
+                            resultElement.textContent = "이사 희망 날짜를 먼저 선택해 주세요.";
+                            return;
+                        }
+
+                        const date = new Date(dateInput);
+                        const day = date.getDate();
+                        // 2026년 1월 손없는날 양력 7, 8, 17, 18, 27, 28일
+                        const handlessDays = [7, 8, 17, 18, 27, 28];
+                        
+                        if (handlessDays.includes(day)) {
+                            resultElement.style.color = var(--accent-green);
+                            resultElement.textContent = `선택하신 1월 ${day}일은 🟢 손없는날입니다. 이사 예약이 매우 중요합니다.`;
+                        } else {
+                            resultElement.style.color = "#d35400";
+                            let message = `선택하신 1월 ${day}일은 🟡 손없는날이 아닙니다. 이사 비용을 절약할 수 있는 좋은 기회일 수 있습니다.`;
+
+                            // 음력 날짜로 변환하여 손 있는 날의 방향 정보 제공 (간소화)
+                            if (day === 1 || day === 2) message += " (음력 1, 2일 근처: 동쪽 '손')";
+                            else if (day === 3 || day === 4) message += " (음력 3, 4일 근처: 남쪽 '손')";
+                            else if (day === 5 || day === 6) message += " (음력 5, 6일 근처: 서쪽 '손')";
+                            else if (day === 9 || day === 10) message += " (음력 9, 10일 근처: 북쪽 '손')";
+                            // 실제 정확한 음력 계산은 서버 측 로직이 필요하여 간략화된 정보 제공
+                            
+                            resultElement.textContent = message;
+                        }
+                    }
+                </script>
+            </form>
+
+        </section>
+        
+        <section id="cost_analysis">
+            <h2>💰 1월이사 비용 분석 및 견적 절약 노하우</h2>
+            <p>**1월이사**는 비수기로 분류될 수도 있지만, **손없는날**과 주말의 수요 집중으로 인해 업체별 가격 편차가 매우 큽니다. 합리적인 가격으로 이사를 진행하기 위해서는 비용 구조를 이해하고 견적 비교 노하우를 활용하는 것이 필수적입니다.</p>
+
+            <h3>이사 종류별 평균 비용 비교 (가상 데이터)</h3>
+            <p>이사 비용은 짐의 양(평형), 이사 거리, 작업 인원, 작업 난이도(층수, 사다리차 유무), 그리고 **이사 날짜**에 따라 크게 달라집니다. 아래 표는 일반적인 5톤 이사(약 24평)를 기준으로 한 평균적인 비용 비교 예시입니다.</p>
+            
+            <table>
+                <caption>이사 종류별 평균 비용 비교 (5톤, 서울/경기 기준, 2026년 예상)</caption>
+                <thead>
+                    <tr>
+                        <th>이사 종류</th>
+                        <th>일반 평일 평균</th>
+                        <th>주말 (손없는날 아님)</th>
+                        <th>**손없는날** 평균</th>
+                        <th>특징 및 참고 사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>**포장이사** (일반)</td>
+                        <td>120만 원 ~ 150만 원</td>
+                        <td>140만 원 ~ 170만 원</td>
+                        <td>**160만 원 ~ 200만 원**</td>
+                        <td>가장 일반적인 형태. 모든 포장/정리 서비스 포함.</td>
+                    </tr>
+                    <tr>
+                        <td>**반포장이사**</td>
+                        <td>90만 원 ~ 120만 원</td>
+                        <td>110만 원 ~ 140만 원</td>
+                        <td>**130만 원 ~ 170만 원**</td>
+                        <td>포장은 업체, 정리는 고객이 담당하여 비용 절감.</td>
+                    </tr>
+                    <tr>
+                        <td>**일반이사**</td>
+                        <td>60만 원 ~ 90만 원</td>
+                        <td>70만 원 ~ 100만 원</td>
+                        <td>**90만 원 ~ 130만 원**</td>
+                        <td>모든 포장/정리를 고객이 직접 처리.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p style="font-size: 0.85rem; color: #7f8c8d;">*상기 비용은 예상치이며, 실제 견적은 방문 상담을 통해 결정됩니다. **손없는날**은 수요에 따라 비용이 더 상승할 수 있습니다.</p>
+
+            <h3>이사 비용 절약을 위한 핵심 팁 (자동완성 키워드 반영)</h3>
+            <ul>
+                <li>**'손없는날' 피하기:** 이사 날짜의 유연성이 있다면, 이사 수요가 적은 **평일**이나 **월요일/화요일**을 선택하면 비용을 크게 절약할 수 있습니다.</li>
+                <li>**이사 시간대 조정:** 손없는날에도 오전에 비해 상대적으로 저렴한 **오후 이사**를 고려해 보세요. (다만, 당일 이사 완료 부담이 커질 수 있습니다.)</li>
+                <li>**최소 3곳 이상 견적 비교:** **'포장이사 견적 비교'** 서비스를 이용하여 최소 3~5곳 이상의 업체로부터 **방문 견적**을 받는 것이 필수입니다. 전화나 온라인 견적만으로는 정확한 비용 산출이 어렵습니다.</li>
+                <li>**불필요한 짐 정리:** 이사 전에 대형 폐기물이나 불필요한 짐을 미리 처분하여 이사 짐의 양을 줄이면 톤수가 낮아져 비용이 절감됩니다.</li>
+                <li>**계약서 상세 확인:** 계약 전 추가 비용 발생 여부(사다리차 비용, 에어컨 탈부착비, 피아노 운반비 등)를 명확히 확인하고 **서면 계약서**를 반드시 작성해야 합니다.</li>
+            </ul>
+
+        </section>
+
+        <section id="checklist">
+            <h2>📝 성공적인 1월 이사를 위한 상세 체크리스트</h2>
+            <p>새로운 시작을 위한 **1월 이사**는 추위와 연말연초의 바쁜 일정 때문에 더욱 꼼꼼한 준비가 필요합니다. 다음 체크리스트를 활용하여 누락 없이 이사를 준비하세요. 이 정보는 네이버에서 **'이사 준비'** 키워드와 함께 많이 찾는 핵심 요소들을 종합했습니다.</p>
+
+            <h3>이사 4주 전 (계약 및 계획)</h3>
+            <ul>
+                <li>**이사 날짜 확정 및 견적 받기:** <strong>'1월이사 손없는날'</strong> 중 날짜를 확정하고, 최소 3곳 이상의 포장이사 업체에 방문 견적을 요청합니다.</li>
+                <li><strong>계약서 작성:</strong> 이사 비용, 파손 시 보상 범위, 인원수, 사다리차 사용 여부 등을 명시한 계약서를 작성합니다.</li>
+                <li><strong>부동산 계약 완료:</strong> 잔금 및 명도 날짜를 명확히 합니다.</li>
+                <li><strong>학교 전학 수속:</strong> 자녀가 있는 경우, 전학 관련 정보를 미리 확인합니다.</li>
+            </ul>
+
+            <h3>이사 2주 전 (행정 및 정리)</h3>
+            <ul>
+                <li><strong>이사 갈 집 사전 점검:</strong> 도배, 장판, 청소 등 입주 전 필요한 수리를 완료합니다.</li>
+                <li><strong>필수 가전/가구 예약:</strong> 에어컨, 인터넷, TV, 정수기 등 이전 설치 및 신규 설치 예약을 진행합니다. (손없는날은 예약이 몰립니다.)</li>
+                <li><strong>우편물 주소 이전 서비스 신청:</strong> 우체국을 통해 주소 이전 서비스를 신청하여 우편물 누락을 방지합니다.</li>
+                <li><strong>대형 폐기물 처리:</strong> 주민센터나 구청에 미리 신고하고 스티커를 발부받아 처리합니다.</li>
+            </ul>
+
+            <h3>이사 1주 전 (마무리 및 포장)</h3>
+            <ul>
+                <li><strong>냉장고 정리 및 성에 제거:</strong> 이사 전 음식물을 정리하고 전원을 미리 끄고 청소합니다.</li>
+                <li><strong>귀중품 및 중요 서류 별도 보관:</strong> 신분증, 통장, 인감, 계약서, 현금 등은 이사 당일 본인이 직접 관리합니다.</li>
+                <li><strong>공과금 정산:</strong> 전기, 수도, 가스 요금 등을 관리실이나 해당 기관에 연락하여 최종 정산합니다. (도시가스 연결 해제/연결 예약 필수)</li>
+            </ul>
+            
+
+            <h3>이사 당일 및 사후 처리</h3>
+            <ul>
+                <li><strong>출발 전 최종 점검:</strong> 전기, 가스, 수도 계량기 확인 및 잠금, 창문 닫힘 여부를 최종 확인합니다.</li>
+                <li><strong>도착 후 짐 정리 확인:</strong> 가구 배치 및 파손된 물건이 없는지 이사팀과 함께 꼼꼼하게 확인합니다.</li>
+                <li><strong>전입 신고:</strong> 이사 후 14일 이내에 관할 주민센터 또는 정부24 홈페이지를 통해 전입 신고를 완료합니다. (확정일자 동시 신청 가능)</li>
+                <li><strong>이사 후 청소 및 정리:</strong> 이사 당일 정리가 어려운 경우, 입주 청소 서비스를 이용하는 것도 고려해 볼 수 있습니다.</li>
+            </ul>
+            
+        </section>
+
+        <section id="deep_analysis">
+            <h2>📜 '손없는날'의 문화적 배경과 현대적 의미 심층 분석</h2>
+            <p>이사 날짜를 결정하는 것은 단순한 일정 조정 이상의 의미를 가집니다. 특히 한국에서는 **'손없는날'**이라는 전통적인 관념이 깊이 뿌리내려 있어, 이는 이사 시장의 수요와 비용에 직접적인 영향을 미칩니다. 이 섹션에서는 '손없는날'의 유래를 포함한 문화적 배경과 현대 사회에서의 의미를 심도 있게 다룹니다.</p>
+
+            <h3>손없는날의 유래: 고대 무속신앙에서 길일(吉日)로</h3>
+            <p><strong>손(損)</strong>이란 '손해를 입히는 귀신'이라는 뜻으로, '손님'이 아닌 '손해를 입히는 존재'라는 의미에서 비롯된 단어입니다. 이 손은 사람이 이사를 하거나 잔치를 벌이는 등 대소사를 치를 때 따라다니며 해를 입힌다고 믿어졌습니다. 이러한 손의 이동 경로를 피하기 위해 일종의 역법(曆法)이 만들어졌는데, 이것이 바로 손없는날을 찾는 원리입니다.</p>
+            <p>이러한 신앙은 농경사회에서 비롯되어, 외부의 악한 기운으로부터 가족과 재산을 보호하려는 염원에서 출발했습니다. 집단적인 생활이 중요했던 과거에는 이웃과 함께 이사를 돕고 새로운 보금자리의 안녕을 기원하는 것이 중요한 의식이었습니다. 따라서 마을 공동체가 공인하는 길일, 즉 **손없는날**에 이사를 진행하는 것이 가장 안전하고 복을 받는 일이라 여겨졌습니다. 이러한 전통은 수천 년 동안 이어져 현대에까지 이사 문화의 한 축을 담당하고 있습니다.</p>
+
+            <h3>2026년 1월, 겨울 이사의 특성과 주의사항</h3>
+            <p>1월은 계절적으로 **겨울 이사**에 해당합니다. 겨울 이사는 다른 계절에 비해 몇 가지 특징적인 장단점과 주의사항을 가집니다.</p>
+            <h4>장점</h4>
+            <ul>
+                <li>**비수기 가격 혜택 (손없는날 제외):** 1월 중에서도 손없는날을 피하거나 평일을 선택할 경우, 3~5월의 봄 성수기에 비해 상대적으로 저렴한 견적을 받을 가능성이 높습니다.</li>
+                <li>**일정 확보 용이:** 손없는날이 아닌 경우, 이사 업체 및 기타 서비스(에어컨 설치 등)의 예약 경쟁이 덜하여 원하는 날짜와 시간을 확보하기 쉽습니다.</li>
+            </ul>
+            <h4>단점 및 주의사항</h4>
+            <ul>
+                <li>**추위로 인한 작업 환경:** 이사 작업자들의 피로도가 높아지고, 가구나 가전제품 운반 시 추위로 인한 파손(특히 전자제품, 목재 가구의 변형 등)의 위험이 증가할 수 있습니다.</li>
+                <li>**결빙 및 눈:** 도로 결빙이나 갑작스러운 폭설은 이사 차량의 운행을 지연시키고, 이사 작업 자체의 위험도를 높여 일정에 차질을 줄 수 있습니다. **1월이사** 계획 시 일기 예보를 반드시 확인해야 합니다.</li>
+                <li>**보일러/난방 점검:** 이사 전후로 보일러 작동 상태와 난방 배관을 철저히 점검하여 동파 사고를 예방하는 것이 매우 중요합니다.</li>
+            </ul>
+
+            <h3>다양한 이사 종류별 심화 정보 (연관 키워드: 원룸 이사, 보관 이사)</h3>
+            <h4>1. 원룸 및 소형 이사</h4>
+            <p>주로 1인 가구나 대학생들이 많이 이용하며, 짐의 양이 적고 이사 거리가 짧을 경우 선택됩니다. **'원룸 이사'**는 일반 포장이사와 달리 '용달 이사' 또는 '반포장 이사' 형태로 진행하는 것이 비용 효율적입니다. 짐이 적더라도 사다리차 사용이 필요하거나 엘리베이터 이용이 어려운 고층 건물이라면 추가 비용이 발생할 수 있으므로, 정확한 짐 목록을 제공하여 견적을 받아야 합니다.</p>
+            <h4>2. 보관 이사</h4>
+            <p>이사를 할 집의 입주 날짜와 현 거주지 퇴거 날짜가 맞지 않아 짐을 일정 기간 보관해야 할 때 이용하는 서비스입니다. **'보관 이사'**는 포장이사 비용 외에 짐을 보관하는 기간에 따른 보관료(일반적으로 월 단위 책정)와 창고로 짐을 입고/출고하는 비용이 추가됩니다. 특히 1월의 경우, 습도 관리가 잘 되는 **전문 보관 창고**를 이용해야 겨울철 결로 및 습기로 인한 곰팡이 피해를 막을 수 있습니다.</p>
+            <h4>3. 해외 이사</h4>
+            <p>해외로의 장거리 이사는 일반 이사와는 완전히 다릅니다. 통관 절차, 해상 운송료, 보험료 등이 복합적으로 작용하며, **1월이사**의 경우 도착 국가의 날씨까지 고려해야 합니다. 포장 자재 또한 국내용과 달라 전문 해외 이사 업체를 통해 진행해야 하며, 준비 기간이 최소 3개월 이상 필요합니다.</p>
+
+            <hr>
+
+            <form id="moving-type-selector">
+                <h3>📌 이사 종류 추천 및 상세 견적 준비 항목</h3>
+                <p>몇 가지 정보를 입력하시면, 귀하에게 적합한 이사 종류를 추천해 드리고 견적 문의 시 필요한 핵심 정보를 알려드립니다.</p>
+
+                <div class="form-group">
+                    <label for="house-size">현 거주지 평형:</label>
+                    <select id="house-size" name="house-size" required>
+                        <option value="">선택</option>
+                        <option value="10평이하">10평 이하 (원룸, 오피스텔)</option>
+                        <option value="20평대">20평대 (아파트, 빌라)</option>
+                        <option value="30평대">30평대 (아파트, 주택)</option>
+                        <option value="40평이상">40평 이상</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="packing-level">포장/정리 희망 수준:</label>
+                    <select id="packing-level" name="packing-level" required>
+                        <option value="">선택</option>
+                        <option value="full-pack">모든 포장/정리를 업체에 맡기고 싶다 (포장이사)</option>
+                        <option value="half-pack">포장은 업체가, 정리는 내가 하고 싶다 (반포장이사)</option>
+                        <option value="self-pack">모두 내가 직접 하고 싶다 (일반이사/용달)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="special-items">특수 물품 유무 (피아노, 대형금고, 돌침대 등):</label>
+                    <input type="text" id="special-items" name="special-items" placeholder="특수 물품이 있다면 입력해 주세요 (없으면 '없음')">
+                </div>
+
+                <button type="button" class="submit-button" onclick="recommendMoveType()">추천 및 견적 정보 확인</button>
+                <div id="recommendation-result" style="margin-top: 1.5rem; border: 1px dashed var(--border-color); padding: 1rem; border-radius: 8px;">
+                    <p style="margin: 0;">여기에 이사 종류 추천 결과와 견적에 필요한 추가 정보가 표시됩니다.</p>
+                </div>
+
+                <script>
+                    function recommendMoveType() {
+                        const size = document.getElementById('house-size').value;
+                        const level = document.getElementById('packing-level').value;
+                        const items = document.getElementById('special-items').value;
+                        const resultDiv = document.getElementById('recommendation-result');
+                        
+                        let recommendation = "";
+                        let quoteTips = "";
+                        
+                        if (size === "10평이하" && level === "self-pack") {
+                            recommendation = "<strong>추천: 용달 이사 또는 일반 이사</strong>. 비용이 가장 저렴하며 짐이 적을 때 유리합니다.";
+                        } else if (size === "10평이하" && (level === "full-pack" || level === "half-pack")) {
+                            recommendation = "<strong>추천: 반포장 이사 (원룸형)</strong>. 최소한의 서비스로 효율적인 이사가 가능합니다.";
+                        } else if (size !== "" && level === "full-pack") {
+                            recommendation = "<strong>추천: 포장 이사</strong>. 가장 편리하고 안전한 방법입니다. '손없는날'이라면 특히 숙련된 업체를 선정해야 합니다.";
+                        } else if (size !== "" && level === "half-pack") {
+                            recommendation = "<strong>추천: 반포장 이사</strong>. 비용과 편리성을 절충한 합리적인 선택입니다.";
+                        } else {
+                            recommendation = "<strong>선택 정보 부족</strong>. 평형과 포장 희망 수준을 모두 선택해 주세요.";
+                        }
+                        
+                        quoteTips = "<h4>견적 요청 시 필수 전달 정보:</h4><ul><li>현/도착지 주소 (층수, 엘리베이터/사다리차 사용 가능 여부)</li><li>정확한 짐의 양 (특수 물품 포함)</li><li>'1월이사 손없는날' 등 희망 날짜</li><li>에어컨, 벽걸이 TV 등 설치/해체 유무</li></ul>";
+                        
+                        resultDiv.innerHTML = `<p>${recommendation}</p>${quoteTips}`;
+                    }
+                </script>
+            </form>
+
+            <hr>
+
+            <h3>공인된 신뢰성 있는 외부사이트 참고 자료</h3>
+            <p>정확하고 신뢰할 수 있는 이사 및 행정 정보를 위해 다음의 공인된 기관 및 외부 사이트 정보를 참고했습니다. **1월이사**와 관련된 행정 및 법규 사항은 아래 링크를 통해 직접 확인하시는 것을 권장합니다.</p>
+            <ul class="references">
+                <li><a href="https://www.mois.go.kr/frt/sub/a06/b01/view.do?nttId=8153" target="_blank">행정안전부 (전입신고, 이사 관련 행정 정보)</a></li>
+                <li><a href="https://www.kisa.or.kr/main.do" target="_blank">한국인터넷진흥원 (KISA) (온라인 정보보호 및 개인정보 관련)</a></li>
+                <li><a href="https://namu.wiki/w/손없는%20날" target="_blank">나무위키 ('손없는 날' 민속적 의미 및 유래)</a></li>
+                <li><a href="https://www.kostat.go.kr/portal/main/index.do" target="_blank">통계청 (인구 이동 및 가구 관련 통계 자료)</a></li>
+                <li><a href="https://www.consumer.go.kr/consumer/index.do" target="_blank">한국소비자원 (이사 서비스 피해 구제 및 보상 기준)</a></li>
+                <li><a href="https://www.korea.kr/news/policyNewsView.do?newsId=148897210" target="_blank">대한민국 정책브리핑 (정부 정책 및 생활 정보)</a></li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>❓ 자주 묻는 질문 (FAQ) - 1월이사 손없는날 관련</h2>
+            
+            <dl>
+                <dt tabindex="0" aria-expanded="false">Q. 2026년 **1월이사 손없는날**이 주말과 겹치면 가격은 얼마나 더 오르나요?</dt>
+                <dd>A. 평일 일반 이사 대비 최소 10%에서 최대 30%까지 할증이 붙을 수 있습니다. 특히 1월 17일(토), 18일(일)과 같이 주말과 손없는날이 겹치는 경우, 이사 업체들이 가장 높은 요율을 적용하는 '슈퍼 성수기'로 분류되어 가격 상승 폭이 매우 큽니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false">Q. **손없는날**이 아닌 날 이사할 경우 피해야 할 방향이 있나요?</dt>
+                <dd>A. 네, 전통적으로 손없는날이 아닌 날에는 '손'이 머무는 방향(음력 날짜 끝자리에 따라 동/남/서/북)으로 이사하는 것을 피했습니다. 하지만 현대 이사에서는 미신적인 요소보다는 합리적인 **이사 비용**과 이사 업체의 서비스 품질, 그리고 개인의 편의를 우선적으로 고려하는 추세입니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false">Q. 이사 중 가구 파손이 발생하면 보상은 어떻게 받나요?</dt>
+                <dd>A. 포장이사 업체는 「화물자동차 운수사업법」에 따라 **이사화물 배상책임보험**에 의무적으로 가입해야 합니다. 이사 당일 파손된 물품은 현장에서 반드시 확인하고, 계약서와 함께 증거 사진을 확보하여 업체에 배상을 요구할 수 있습니다. 보상 절차 및 기준은 계약서에 명시된 내용을 따르며, 한국소비자원을 통해 도움을 받을 수도 있습니다.</dd>
+
+                <dt tabindex="0" aria-expanded="false">Q. **1월이사** 시 사다리차 사용료는 누가 부담하나요?</dt>
+                <dd>A. 사다리차 사용료는 보통 **이사 비용에 포함**되어 총 견적에 산정되는 것이 일반적입니다. 하지만 견적서에 사다리차 비용이 별도 항목으로 명시되어 있는지, 층수에 따라 추가 요금이 발생하는지 여부를 계약 전에 반드시 확인해야 합니다. 고층 이사의 경우 사다리차 사용이 필수적이며 비용이 증가할 수 있습니다.</dd>
+                
+                <dt tabindex="0" aria-expanded="false">Q. **2026년 1월** 이사 견적은 언제 받는 것이 가장 좋은가요?</dt>
+                <dd>A. **1월이사 손없는날**에 이사를 원하신다면, 최소 이사 예정일 **3개월 전 (즉, 10월 초~11월 초)**에 방문 견적을 받는 것이 가장 좋습니다. 이 시기에 예약해야 원하는 업체를 확보하고 가격 협상에 유리한 위치를 점할 수 있습니다. 늦어도 12월 초까지는 예약을 완료하는 것이 안전합니다.</dd>
+            </dl>
+        </section>
+
+
+        <section id="quotation">
+            <h2>📞 1월 이사 포장이사 견적 요청 및 예약 문의</h2>
+            <p>2026년 **1월이사 손없는날**에 성공적으로 이사하기 위해 지금 바로 견적을 요청하세요. 아래 정보를 상세히 입력해 주시면, 고객님의 조건에 가장 적합한 이사 전문 업체를 연결해 드리고 정확한 견적을 산출해 드립니다. 입력란이 많을수록 정확한 견적을 받는 데 도움이 되며, 고객님의 체류 시간을 늘려 검색 엔진 최적화에도 긍정적인 영향을 미칩니다.</p>
+
+            <form id="quotation-form" action="#" method="post">
+                <h3>필수 이사 정보 입력</h3>
+                <div class="form-group">
+                    <label for="quotation-name">성함:</label>
+                    <input type="text" id="quotation-name" name="name" required placeholder="홍길동">
+                </div>
+                <div class="form-group">
+                    <label for="quotation-tel">연락처:</label>
+                    <input type="tel" id="quotation-tel" name="tel" required placeholder="010-XXXX-XXXX" pattern="[0-9]{2,3}-[0-9]{3,4}-[0-9]{4}">
+                </div>
+                <div class="form-group">
+                    <label for="quotation-email">이메일:</label>
+                    <input type="email" id="quotation-email" name="email" required placeholder="example@email.com">
+                </div>
+
+                <h3>이사 상세 조건 (견적 정확도 향상)</h3>
+                <div class="form-group">
+                    <label for="move-date-final">**희망 이사 날짜 (2026년 1월 손없는날 포함):**</label>
+                    <input type="date" id="move-date-final" name="move-date-final" required min="2026-01-01" max="2026-01-31">
+                </div>
+                <div class="form-group">
+                    <label>희망 이사 종류:</label>
+                    <div>
+                        <input type="radio" id="q_full" name="move-type" value="포장이사" required><label for="q_full">포장이사</label>
+                        <input type="radio" id="q_half" name="move-type" value="반포장이사"><label for="q_half">반포장이사</label>
+                        <input type="radio" id="q_general" name="move-type" value="일반이사"><label for="q_general">일반이사</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="current-address">현재 거주지 주소 (층수 포함):</label>
+                    <textarea id="current-address" name="current-address" rows="2" required placeholder="예: 서울특별시 강남구, 아파트 15층"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="new-address">이사 갈 곳 주소 (층수 포함):</label>
+                    <textarea id="new-address" name="new-address" rows="2" required placeholder="예: 경기도 성남시 분당구, 빌라 3층"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="luggage-amount">짐의 양 (대략적인 평형 또는 톤수):</label>
+                    <select id="luggage-amount" name="luggage-amount" required>
+                        <option value="">선택</option>
+                        <option value="1톤이하">원룸/오피스텔 (1~2톤)</option>
+                        <option value="5톤">일반 가정 (20평대, 5톤)</option>
+                        <option value="7.5톤">대형 가정 (30평대, 7.5톤)</option>
+                        <option value="10톤이상">대형 가정 (40평 이상, 10톤 이상)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-requests">추가 요청 사항 (특수 짐, 에어컨 설치 유무 등):</label>
+                    <textarea id="additional-requests" name="additional-requests" rows="4" placeholder="예: 에어컨 분리/설치 필요, 붙박이장 해체/조립 필요, '1월이사 손없는날' 오전 작업 희망"></textarea>
+                </div>
+
+                <button type="submit" class="cta-button submit-button" style="width: 100%;">견적 요청서 제출하기</button>
+            </form>
+        </section>
     </main>
-  </body>
-</html>
+
+    <footer>
+        <p>Copyright &copy; 2026 **1월이사 손없는날** 전문 정보 제공. All Rights Reserved.</p>
+        <p>본 페이지는 2026년 이사 계획에 도움을 드리기 위한 정보성 가이드입니다. 실제 이사 비용 및 날짜는 개별 업체와의 계약을 통해 확정됩니다.</p>
+    </footer>
+
+    <script>
+        // FAQ 아코디언 기능 (접기/펼치기)
+        document.querySelectorAll('dl dt').forEach((dt) => {
+            dt.addEventListener('click', () => {
+                const isActive = dt.classList.toggle('active');
+                dt.setAttribute('aria-expanded', isActive);
+                // 모든 다른 DD는 닫기
+                document.querySelectorAll('dl dt').forEach(otherDt => {
+                    if (otherDt !== dt) {
+                        otherDt.classList.remove('active');
+                        otherDt.setAttribute('aria-expanded', 'false');
+                    }
+                });
+            });
+            dt.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    dt.click();
+                }
+            });
+        });
+
+        // 폼 제출 방지 (데모용)
+        document.getElementById('quotation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('견적 요청이 성공적으로 접수되었습니다. 곧 담당자가 연락드리겠습니다. (이 기능은 데모입니다)');
+            // 실제 구현 시 서버로 데이터 전송 로직 추가
+        });
+    </script>
+</body>
+  
